@@ -5,37 +5,6 @@
  arr1.sort((x,y)=>x.toLowerCase() <y.toLowerCase() ? 1:-1)
  console.log('sorted Array Descending',arr1)
  
- //Using JS functions and an array of numbers, return positive if an element within the array  is positive, negative if an element is negative, else zero*/
- function checkingNums(x,y){
- let positive_count = 0;
- let negative_count = 0;
-for(let i=0; i<y; i++){
-  if(x[i]>0){
-   positive_count ++;
-}else{
-  negative_count ++;
-    }
- }
- if(positive_count===1){
- for(let i=0; i<Z; i++){
-   if(x[i]>0){
-         return x[i];
-     }
-  } }
- else if (negative_count===1){
-    for (let i=0; i<Z; i++){
-           if (x[i]<0){
-               return x[i];
-           }
-       }
-   }
-   else{
-        return 0;
-    }
-}
-const arrNums = [1,0,-1,2,-2,-3];
-const w = arrNums.length;
-console.log(checkNums(arrNums, Z));
  
  
  //Given an array of objects, where each object represents an employee with an id, name, and salary property, write a function that returns a new array of employee objects sorted by their salary in ascending order.*/
